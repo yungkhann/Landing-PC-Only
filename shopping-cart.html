@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="wrapper">
@@ -80,7 +81,16 @@
                 
             </div>
         </header>
-       
+        <div class="pages-path">
+            <div class="text">
+                <h2>Shopping Cart</h2>
+                <div class="path">
+                    <span>Home</span>
+                    <span>.Pages</span>
+                    <span>.shopping cart</span>
+                </div>
+            </div>
+        </div>
         <div class="shopping-cart">
             <div class="table">
                 <div class="table__heads">
@@ -91,6 +101,7 @@
                 </div>
                 <div class="table__items">
                     <div class="item">
+                        <input class="delete__btn" type="image" src="./img/sc-delete.svg">
                         <img src="./img/sc-item1.jpg" alt="">
                         <div class="desc">
                             <div class="item__title">
@@ -110,6 +121,7 @@
                         
                     </div>
                     <div class="item">
+                        <input class="delete__btn" type="image" src="./img/sc-delete.svg">
                         <img src="./img/sc-item2.jpg" alt="">
                         <div class="desc">
                             <div class="item__title">
@@ -129,6 +141,7 @@
                         
                     </div>
                     <div class="item">
+                        <input class="delete__btn" type="image" src="./img/sc-delete.svg">
                         <img src="./img/sc-item3.jpg" alt="">
                         <div class="desc">
                             <div class="item__title">
@@ -148,6 +161,7 @@
                         
                     </div>
                     <div class="item">
+                        <input class="delete__btn" type="image" src="./img/sc-delete.svg">
                         <img src="./img/sc-item4.jpg" alt="">
                         <div class="desc">
                             <div class="item__title">
@@ -167,6 +181,7 @@
                         
                     </div>
                     <div class="item">
+                        <input class="delete__btn" type="image" src="./img/sc-delete.svg">
                         <img src="./img/sc-item5.jpg" alt="">
                         <div class="desc">
                             <div class="item__title">
@@ -211,8 +226,8 @@
                             <div class="price">£325.00</div>
                         </div>
                         <div class="shipping-checkout">
-                            <img src="./img/shipping-taxes.svg" alt="">
-                            <span class="checkout__text">Shipping & taxes calculated at checkout</span>
+                            <input class="shipping__checkbox" type="checkbox" checked="checked">
+                            <label for="shipping__checkbox" class="checkout__text">Shipping & taxes calculated at checkout</label>
                         </div>
                         <button class="checkout__btn">
                             Proceed To Checkout
